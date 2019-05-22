@@ -1,0 +1,57 @@
+<template>
+  <v-navigation-drawer :value="drawer" app fixed>
+    <v-list dense>
+      <v-list-tile :to="{ name: 'Home' }" exact>
+        <v-list-tile-action>
+          <v-icon>home</v-icon>
+        </v-list-tile-action>
+
+        <v-list-tile-content>
+          <v-list-tile-title>Home</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+
+      <v-list-tile :to="{ name: 'M' }" exact>
+        <v-list-tile-action>
+          <v-icon>web</v-icon>
+        </v-list-tile-action>
+
+        <v-list-tile-content>
+          <v-list-tile-title>M</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+
+      <v-list-tile :to="{ name: 'Randanimals' }" exact>
+        <v-list-tile-action>
+          <v-icon>dashboard</v-icon>
+        </v-list-tile-action>
+
+        <v-list-tile-content>
+          <v-list-tile-title>Randanimals</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+
+      <v-list-tile :to="{ name: 'Noisy' }" exact>
+        <v-list-tile-action>
+          <v-icon>gif</v-icon>
+        </v-list-tile-action>
+
+        <v-list-tile-content>
+          <v-list-tile-title>Noisy</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+    </v-list>
+  </v-navigation-drawer>
+</template>
+
+<script lang="ts">
+import Vue from "vue"
+import Component from "vue-class-component"
+
+@Component({
+	props: {
+		drawer: { type: Boolean, required: true }
+	}
+})
+export default class Drawer extends Vue {}
+</script>
