@@ -1,18 +1,20 @@
 {
 	"defaultSeverity": "warning",
-	"extends": ["tslint:recommended", "tslint-config-prettier"],
+	"extends": [
+		"tslint:latest"
+	],
 	"linterOptions": {
-		"exclude": ["node_modules/**"]
+		"exclude": [
+			"**/__sapper__/**",
+			"**/dist/**",
+			"**/node_modules/**",
+			"package.json"
+		]
 	},
 	"rules": {
-		"indent": [true, "tabs", 2],
-		"interface-name": [true, "never-prefix"],
-		"no-consecutive-blank-lines": true,
-		"member-access": [true, "no-public"],
-		"ordered-imports": false,
-		"object-literal-sort-keys": false,
-		"quotemark": [true, "double"],
-		"semicolon": [true, "never"],
-		"trailing-comma": false
+		"quotemark": [
+			true,
+			"double"
+		]
 	}
 }

@@ -1,0 +1,167 @@
+{
+	"attrsSorter.order": [
+		"is",
+		"v-for",
+		"v-if",
+		"v-else-if",
+		"v-else",
+		"v-show",
+		"v-cloak",
+		"v-once",
+		"v-pre",
+		"id",
+		"ref",
+		"key",
+		"slot",
+		"v-model",
+		"v-model.+",
+		"v-bind",
+		"v-bind.+",
+		":.+",
+		"v-text",
+		"v-text.+",
+		"v-html",
+		"v-html.+",
+		"class",
+		"v-on.+",
+		"@.+",
+		"name",
+		"data-.+",
+		"ng-.+",
+		"src",
+		"for",
+		"type",
+		"href",
+		"values",
+		"title",
+		"alt",
+		"role",
+		"aria-.+",
+		"$unknown$"
+	],
+
+	"auto-close-tag.fullMode": true,
+	"auto-close-tag.SublimeText3Mode": true,
+
+	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
+	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+	"bracket-pair-colorizer-2.highlightActiveScope": true,
+
+	"breadcrumbs.enabled": true,
+
+	"css.validate": false,
+
+	"editor.cursorBlinking": "smooth",
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16,
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.insertSpaces": false,
+	"editor.matchBrackets": false,
+	"editor.renderControlCharacters": true,
+	"editor.renderWhitespace": "all",
+	"editor.suggestSelection": "first",
+	"editor.tabSize": 2,
+
+	"eslint.alwaysShowStatus": true,
+	"eslint.autoFixOnSave": true,
+	"eslint.enable": true,
+	"eslint.validate": [
+		{
+			"language": "javascript",
+			"autoFix": true
+		},
+		{
+			"language": "javascriptreact",
+			"autoFix": true
+		},
+		{
+			"language": "typescript",
+			"autoFix": true
+		},
+		{
+			"language": "typescriptreact",
+			"autoFix": true
+		},
+		{
+			"language": "vue",
+			"autoFix": true
+		},
+		{
+			"language": "html",
+			"autoFix": true
+		}
+	],
+
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+
+	"go.autocompleteUnimportedPackages": true,
+
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	"less.validate": false,
+
+	"python.formatting.provider": "yapf",
+	"python.formatting.yapfArgs": [
+		"--style",
+		"{based_on_style: chromium, use_tabs: true}"
+	],
+
+	"scss.validate": false,
+
+	"stylelint.config": {
+		"extends": ["stylelint-config-recommended"],
+		"rules": {
+			"at-rule-no-unknown": [true, {
+				"ignoreAtRules": [
+					"tailwind",
+					"apply",
+					"variants",
+					"responsive",
+					"screen"
+				]
+			}],
+			"declaration-block-trailing-semicolon": null,
+			"no-descending-specificity": null
+		}
+	},
+		
+	"terminal.integrated.fontFamily": "Consolas",
+
+	"todohighlight.isEnable": true,
+	"todohighlight.isCaseSensitive": false,
+	"todohighlight.keywords": [
+		"DEBUG:",
+		"FIXME:",
+		"NOTE:",
+		"README:",
+		"REVIEW:",
+		"TODO:"
+	],
+
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	"vetur.format.defaultFormatter.js": "vscode-typescript",
+	"vetur.format.defaultFormatter.ts": "vscode-typescript",
+
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+	"workbench.colorTheme": "Night Owl",
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#000C1D",
+		"activityBar.border": "#102a44",
+		"sideBar.background": "#001122",
+		"sideBar.border": "#102a44",
+		"sideBar.foreground": "#8BADC1"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"window.zoomLevel": 0,
+}
