@@ -1,14 +1,14 @@
 <script>
   import P5 from "../P5.svelte";
 
-  let rectSize = 20;
-  let noiseMultX = 55;
-  let noiseMultY = 55;
-  let noiseMultZ = 55;
-  let mode = "HSB";
+  let nbSquare = 20,
+    noiseMultX = 55,
+    noiseMultY = 55,
+    noiseMultZ = 55,
+    mode = "HSB";
 
   function setup(sketch) {
-    sketch.createCanvas(400, 400);
+    sketch.createCanvas(333, 333);
     sketch.noStroke();
     sketch.frameRate(24);
   }
@@ -23,8 +23,8 @@
       sketch.colorMode(sketch.HSB);
     }
 
-    for (let x = 0; x < sketch.width; x += rectSize) {
-      for (let y = 0; y < sketch.height; y += rectSize) {
+    for (let x = 0; x < sketch.width; x += sketch.width / nbSquare) {
+      for (let y = 0; y < sketch.height; y += sketch.height / nbSquare) {
         if (mode === "HSB") {
           sketch.fill(
             360 *
@@ -49,10 +49,10 @@
             )
           );
         }
-        sketch.rect(x, y, rectSize, rectSize);
+        sketch.rect(x, y, sketch.width / nbSquare, sketch.height / nbSquare);
       }
     }
   }
 </script>
 
-<P5 id="ColoursNoises" {setup} {draw} />
+<P5 {setup} {draw} />

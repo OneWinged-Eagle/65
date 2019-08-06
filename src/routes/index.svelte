@@ -7,6 +7,7 @@
 
   <figure class="centered">
     <img alt="Borat" class="max-w-md mx-auto" src="great-success.png" />
+
     <figcaption>HIGH FIVE!</figcaption>
   </figure>
 

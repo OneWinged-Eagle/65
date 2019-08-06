@@ -4,11 +4,15 @@
 </script>
 
 <svelte:head>
-  <title>Noisy</title>
+  <title>Noises</title>
 </svelte:head>
 
 <section class="lg:flex">
-  <ColoursNoises />
+  <div class="flex-initial mx-auto">
+    <ColoursNoises />
+  </div>
 
-  <RadialNoises />
+  <div class="flex-initial mx-auto">
+    <RadialNoises />
+  </div>
 </section>

@@ -1,7 +1,8 @@
 <script>
   import { onMount } from "svelte";
 
-  export let id, setup, draw;
+  export let setup, draw;
+  let sketchHolder;
 
   onMount(async () => {
     const { default: p5 } = await import("p5/lib/p5.min");
@@ -14,9 +15,14 @@
       sketch.draw = (...args) => {
         draw(sketch, ...args);
       };
-    }, id);
+    }, sketchHolder);
   });
 </script>
 
-<figure {id} class="mx-auto" />
-<!-- TODO: small screens -->
+<style>
+  div :global(canvas) {
+    @apply w-full h-auto !important;
+  }
+</style>
+
+<div bind:this={sketchHolder} />

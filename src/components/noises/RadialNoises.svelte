@@ -1,13 +1,13 @@
 <script>
   import P5 from "../P5.svelte";
 
-  let refreshRate = 550;
-  let noiseMultX = 55;
-  let noiseMultY = 55;
-  let noiseMultZ = 55;
+  let refreshRate = 550,
+    noiseMultX = 55,
+    noiseMultY = 55,
+    noiseMultZ = 55;
 
   function setup(sketch) {
-    sketch.createCanvas(400, 400);
+    sketch.createCanvas(333, 333);
     sketch.background(255);
     sketch.stroke(0, 15);
     sketch.noFill();
@@ -43,4 +43,4 @@
   }
 </script>
 
-<P5 id="RadialNoises" {setup} {draw} />
+<P5 {setup} {draw} />
