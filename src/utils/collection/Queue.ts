@@ -1,7 +1,7 @@
 /** A class representing a queue. */
-export class Queue {
+export class Queue<T> {
 	/** The queue as an array. */
-	private queue: any[]
+	private queue: T[]
 	/** The left offset of the queue. */
 	private offset: number
 
@@ -15,19 +15,17 @@ export class Queue {
 	 * Adds an element to the queue in O(1) amortised time.
 	 * @param elem the element
 	 */
-	public enqueue(elem: any): void {
-		if (elem !== null) {
-			this.queue.push(elem)
-		}
+	public enqueue(elem: T): void {
+		this.queue.push(elem)
 	}
 
 	/**
 	 * Removes and returns the element at the beginning of the queue in O(1) amortised time.
 	 * @returns the queue's first element
 	 */
-	public dequeue(): any {
+	public dequeue(): T | undefined {
 		if (this.length() === 0) {
-			return null
+			return undefined
 		}
 
 		const elem = this.queue[this.offset++]
@@ -44,9 +42,9 @@ export class Queue {
 	 * Returns the element at the beginning of the queue in O(1) time.
 	 * @returns the queue's first element
 	 */
-	public peek(): any {
+	public peek(): T | undefined {
 		if (this.length() === 0) {
-			return null
+			return undefined
 		}
 
 		return this.queue[this.offset]

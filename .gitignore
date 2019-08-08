@@ -5,3 +5,5 @@ yarn-error.log
 /__sapper__/
 
 .rpt2_cache
+
+/static/global.css

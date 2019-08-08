@@ -1,7 +1,7 @@
 /** A class representing a stack. */
-export class Stack {
+export class Stack<T> {
 	/** The stack as an array. */
-	private stack: any[]
+	private stack: T[]
 
 	/** Creates an empty stack. */
 	public constructor() {
@@ -12,21 +12,15 @@ export class Stack {
 	 * Adds an element at the top of the stack in O(1) amortised time.
 	 * @param elem the element
 	 */
-	public push(elem: any): void {
-		if (elem !== null) {
-			this.stack.push(elem)
-		}
+	public push(elem: T): void {
+		this.stack.push(elem)
 	}
 
 	/**
 	 * Removes and returns the element at the top of the stack in O(1) amortised time.
 	 * @returns the stack's top element
 	 */
-	public pop(): any {
-		if (this.stack.length === 0) {
-			return null
-		}
-
+	public pop(): T | undefined {
 		return this.stack.pop()
 	}
 
@@ -34,9 +28,9 @@ export class Stack {
 	 * Returns the element at the top of the stack in O(1) time.
 	 * @returns the stack's top element
 	 */
-	public peek(): any {
+	public peek(): T | undefined {
 		if (this.stack.length === 0) {
-			return null
+			return undefined
 		}
 
 		return this.stack[this.stack.length - 1]
