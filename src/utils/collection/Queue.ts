@@ -5,7 +5,7 @@ export class Queue<T> {
 	/** The left offset of the queue. */
 	private offset: number
 
-	/** Creates an empty queue. */
+	/** Creates an empty queue in O(1) time. */
 	public constructor() {
 		this.queue = []
 		this.offset = 0
@@ -30,7 +30,7 @@ export class Queue<T> {
 
 		const elem = this.queue[this.offset++]
 
-		if (this.offset * 2 >= this.queue.length) {
+		if (this.length() <= this.queue.length / 2) {
 			this.queue = this.queue.slice(this.offset)
 			this.offset = 0
 		}

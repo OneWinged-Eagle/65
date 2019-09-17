@@ -1,6 +1,6 @@
 <script>
-  import ColoursNoises from "../components/noises/ColoursNoises.svelte";
-  import RadialNoises from "../components/noises/RadialNoises.svelte";
+  import ColoursNoises from "../../components/p5/noises/ColoursNoises.svelte";
+  import RadialNoises from "../../components/p5/noises/RadialNoises.svelte";
 </script>
 
 <svelte:head>

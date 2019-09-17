@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>65</title>
 </svelte:head>
 
 <section>

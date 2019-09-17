@@ -69,7 +69,7 @@
     </li>
 
     <li>
-      <a class={segment === 'noises' ? 'selected' : ''} href="noises">noises</a>
+      <a class={segment === 'p5' ? 'selected' : ''} href="p5">p5</a>
     </li>
 
     <li>

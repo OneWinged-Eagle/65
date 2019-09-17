@@ -3,7 +3,7 @@ export class Stack<T> {
 	/** The stack as an array. */
 	private stack: T[]
 
-	/** Creates an empty stack. */
+	/** Creates an empty stack in O(1) time. */
 	public constructor() {
 		this.stack = []
 	}
